@@ -6,6 +6,7 @@ import App from "./App";
 import Register from "./routes/Auth/Register";
 import Login from "./routes/Auth/Login";
 import NotFound from "./routes/NotFound";
+import Database from "./routes/Database/Database.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <Route path="register" element={<Register />} />
       <Route path="login" element={<Login />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="database" element={<Database />} />
     </Routes>
   </BrowserRouter>
 );

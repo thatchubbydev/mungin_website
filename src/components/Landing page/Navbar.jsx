@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* end links */}
       <div className='flex items-center space-x-4 w-full flex-row '>
         <Link to={'/register'}><button className='text-[#375A1A]'>Join Waiting List</button></Link>
-        <button className=' bg-[#17233C] p-3 text-white px-4 rounded-md'>Check Our Database</button>
+        <Link to={'/database'}><button className=' bg-[#17233C] p-3 text-white px-4 rounded-md'>Check Our Database</button></Link>
       </div>
       </div>
       {/* hamburger menu */}
