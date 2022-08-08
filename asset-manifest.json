@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/frontend/static/css/main.6cc7112d.css",
+    "main.js": "/frontend/static/js/main.08941824.js",
+    "static/media/cocoa.png": "/frontend/static/media/cocoa.72ced866def5c49ad093.png",
+    "static/media/mission-img.png": "/frontend/static/media/mission-img.68f8161ab6c64039275d.png",
+    "static/media/Union.png": "/frontend/static/media/Union.f721ca8f7755492db556.png",
+    "static/media/working process.png": "/frontend/static/media/working process.6a4098e1e2ea03a5df8a.png",
+    "static/media/carousel-image.png": "/frontend/static/media/carousel-image.351da546b73a57c8dc57.png",
+    "static/media/google-s.png": "/frontend/static/media/google-s.9a818e616d0f17caffc4.png",
+    "static/media/sponsors.png": "/frontend/static/media/sponsors.cb1de52b4e790f34fb03.png",
+    "static/media/not_found.png": "/frontend/static/media/not_found.fab8ad695e2026cc86b8.png",
+    "static/media/logo-white-bg.png": "/frontend/static/media/logo-white-bg.f9f9d51c340cbe1ab8fb.png",
+    "index.html": "/frontend/index.html",
+    "main.6cc7112d.css.map": "/frontend/static/css/main.6cc7112d.css.map",
+    "main.08941824.js.map": "/frontend/static/js/main.08941824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cc7112d.css",
+    "static/js/main.08941824.js"
+  ]
+}
