@@ -5,11 +5,11 @@ import logo from '../../assets/logo-footer.png'
 const Footer = () => {
   return (
     // parent container
-    <div className='bg-[#333333] w-full text-[#FFFFFF] '>
+    <div className='bg-[#333333] w-full text-[#FFFFFF] pb-6'>
       {/* content container */}
-      <div className='pt-10 space-y-8 flex md:flex-row sm:items-center sm:flex-col md:justify-between mx-auto container'>
+      <div className='pt-10 space-y-8 flex md:flex-row sm:items-center sm:flex-col md:justify-between mx-auto container '>
         {/* quick access */}
-      <div className=' w-1/3'>
+      <div className=' w-1/3 '>
         <img src={logo} className='mb-6' alt='mungin'/>
         <h2 className='mb-4 text-xl font-semibold'>Quick Access</h2>
         <p className='mb-4 font-light'>We are one of the leading companies that has made automation 

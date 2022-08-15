@@ -7,6 +7,20 @@ import Register from "./routes/Auth/Register";
 import Login from "./routes/Auth/Login";
 import NotFound from "./routes/NotFound";
 import Database from "./routes/Database/Database.jsx";
+import CropProfile from "./routes/Crop Profile/CropProfile";
+import Variety from "./routes/Crop Profile/Variety";
+import Description from "./routes/Crop Profile/Description";
+import CropValue from "./routes/Crop Profile/CropValue";
+import ProductionFacts from "./routes/Crop Profile/ProductionFacts";
+import PlantAnatomy from "./routes/Crop Profile/PlantAnatomy";
+import Morphology from "./routes/Crop Profile/Morphology";
+import PostHarvest from "./routes/Crop Profile/PostHarvest";
+import ClimaticRequirements from "./routes/Crop Profile/ClimaticRequirements";
+import Cultivar from "./routes/Crop Profile/Cultivar";
+import SoilReq from "./routes/Crop Profile/SoilReq";
+import NutrientRequirements from "./routes/Crop Profile/NutrientRequirements";
+import CropManagement from "./routes/Crop Profile/CropManagement";
+import PlantOperations from "./routes/Crop Profile/PlantOperations";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +31,20 @@ root.render(
       <Route path="login" element={<Login />} />
       <Route path="*" element={<NotFound />} />
       <Route path="database" element={<Database />} />
+      <Route path="crop_p" element={<CropProfile />} />
+      <Route path="cultivar" element={<Cultivar />} />
+      <Route path="variety" element={<Variety />} />
+      <Route path="crop_v" element={<CropValue />} />
+      <Route path="production_f" element={<ProductionFacts />} />
+      <Route path="plant_a" element={<PlantAnatomy />} />
+      <Route path="morphology" element={<Morphology />} />
+      <Route path="post_h" element={<PostHarvest />} />
+      <Route path="climatic_r" element={<ClimaticRequirements />} />
+      <Route path="soil_r" element={<SoilReq />} />
+      <Route path="nutrient_r" element={<NutrientRequirements />} />
+      <Route path="description" element={<Description />} />
+      <Route path="crop_m" element={<CropManagement />} />
+      <Route path="plant_o" element={<PlantOperations />} />
     </Routes>
   </BrowserRouter>
 );

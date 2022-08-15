@@ -2,16 +2,19 @@ import React from 'react'
 import {BiSearch} from 'react-icons/bi'
 import {RiArrowDropDownLine} from 'react-icons/ri'
 import {IoChevronBackSharp} from 'react-icons/io5'
+import {BsThreeDotsVertical,BsArrowUp,BsArrowDown} from 'react-icons/bs'
 import logo from '../../assets/logo-white-bg.png'
 import profile from '../../assets/profile.png'
 import { Link } from 'react-router-dom'
+import CropData from './CropData'
+import { data } from './data'
 const Database = () => {
   return (
     // parent container
-    <div className=' flex'>
+    <div className=' flex container mx-auto'>
         {/*left container*/}
         <div className='mr-24 ml-12'>
-            <img src={logo} alt='mungin logo' width={200} className='mt-12'/>
+            <img src={logo} alt='mungin logo' width={300} className='mt-12'/>
         </div>
         {/* right container */}
         <div className='  w-full pl-8 pr-8 '>
@@ -21,7 +24,7 @@ const Database = () => {
                 <Link to={'/'}>
                     <div className='flex'>
                         <IoChevronBackSharp size={25}/>
-                        <p className=''>Back to home</p>
+                        <p className='text-[#5A5A5A] text-lg'>Back to home</p>
                     </div>
                 </Link>    
                 {/* profile */}
@@ -55,6 +58,40 @@ const Database = () => {
                 <p className='mr-2'><span className='font-bold'>10 </span>Search results</p>
                 <RiArrowDropDownLine size={25}/>
             </div>
+            {/* crop data container*/}
+            <div>
+                {/* crop data categories */}
+                <div className='text-[#5A5A5A] mt-6 font-bold text-sm flex justify-between'>
+                    {/* crop */}
+                    <div className='flex space-x-3'>
+                        <p>CROP</p>
+                        <div className='text-[#75A843]'>
+                        <BsArrowUp size={20}/>
+                        </div>   
+                    </div>
+                    {/* year and versio container */}
+                    <div className='flex space-x-32' >
+                        {/* year container */}
+                        <div className='flex space-x-3'>
+                            <p>YEAR</p>
+                            <BsArrowDown size={20}/>
+                        </div>
+                        {/* version container */}
+                        <div className='flex space-x-3'>
+                            <p>VERSION</p>
+                            <BsArrowDown size={20}/>
+                        </div>
+                        {/* empty */}
+                        <div className='text-white'>
+                            <BsThreeDotsVertical size={25}/>
+                        </div>
+                                               
+                    </div>
+                </div>
+                {/* crop data */}
+                <CropData item={data}/>
+            </div>
+
 
             
             
