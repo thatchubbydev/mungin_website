@@ -3,7 +3,7 @@ import mission from '../../assets/mission-img.png'
 
 const Mission = () => {
   return (
-    <div className='flex justify-center mt-24'><img src={mission} alt='mission'/></div>
+    <div className='flex justify-center mt-24 mb-8'><img src={mission} alt='mission'/></div>
   )
 }
 

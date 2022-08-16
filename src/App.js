@@ -15,8 +15,8 @@ const App = () => {
         <Hero />
         <MiniCard />
         <Mission />
-        <About />
-        <Advert />
+        {/* <About />
+        <Advert /> */}
       </div>
       <Footer />
     </>

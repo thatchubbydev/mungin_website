@@ -17,12 +17,21 @@ import plant_o from '../../assets/vector/plant_o.png'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Reusable components/Navbar'
 import maize from '../../assets/maize_1.png'
+import Button from '../../components/Reusable components/Button'
+import { useState } from 'react'
+import ModalMain from '../../components/Reusable components/ModalMain'
+
 
 
 const CropProfile = () => {
+    const [Modal, setModal] = useState(false)
   return (
     // parent container
     <div className='flex'>
+        {Modal && <ModalMain  closeModal={setModal}/>}
+        {/* create a state called Modal that is responsible for displaying ModalMain component
+         pass the state as props called closeModal into the ModalMain component*/}
+
         {/* left container */}
         <div className=' pt-6 w-1/4 shadow-3xl'>
             {/* image container */}
@@ -151,9 +160,10 @@ const CropProfile = () => {
             <div className='flex mx-10 justify-between border-b pb-8'>
                 <h2 className='text-4xl font-semibold'>Crop Profile For Maize</h2>
                 {/* button container */}
-                <div className='bg-[#17233C] text-white py-3 px-4 rounded-md '>
-                    <p>Analyze Crop Yield</p>
-                </div>
+                <Button openModal = {setModal}/> 
+                {/* pass setModal as props into Button component */}
+
+                
 
             </div>
             {/* content */}
