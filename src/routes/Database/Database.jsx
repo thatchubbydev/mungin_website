@@ -8,13 +8,23 @@ import profile from '../../assets/profile.png'
 import { Link } from 'react-router-dom'
 import CropData from './CropData'
 import { data } from './data'
+import Button from '../../components/Reusable components/Button'
+import ModalMain from '../../components/Reusable components/ModalMain'
+import { useState } from 'react'
 const Database = () => {
+    const [Modal, setModal] = useState(false)
   return (
     // parent container
-    <div className=' flex container mx-auto'>
+    <div className=' flex container mr-6'>
+        {Modal && <ModalMain  closeModal={setModal}/>}
+        {/* create a state called Modal that is responsible for displaying ModalMain component
+         pass the state as props called closeModal into the ModalMain component*/}
         {/*left container*/}
-        <div className='mr-24 ml-12'>
-            <img src={logo} alt='mungin logo' width={300} className='mt-12'/>
+        <div className='pr-24 pl-12 shadow-3xl'>
+            <Link to={'/'}>
+                <img src={logo} alt='mungin logo' width={225} className='mt-12'/>
+            </Link>
+            
         </div>
         {/* right container */}
         <div className='  w-full pl-8 pr-8 '>
@@ -23,8 +33,8 @@ const Database = () => {
                 {/* home container */}
                 <Link to={'/'}>
                     <div className='flex'>
-                        <IoChevronBackSharp size={25}/>
-                        <p className='text-[#5A5A5A] text-lg'>Back to home</p>
+                        {/* <IoChevronBackSharp size={25}/>
+                        <p className='text-[#5A5A5A] text-lg'>Back to home</p> */}
                     </div>
                 </Link>    
                 {/* profile */}
@@ -33,9 +43,9 @@ const Database = () => {
                     <RiArrowDropDownLine size={25}/>
                 </div>   
             </div>
-            {/* search container */}
+            {/* search container and show 10 */}
             <div className='flex justify-between mb-10'>
-                {/* number container */}
+                {/* show 10 container */}
                 <div className='flex text-[#313131] bg-white '>
                     <p className='border p-2'>Show</p>
                     {/* show 10 container */}
@@ -44,14 +54,19 @@ const Database = () => {
                         <RiArrowDropDownLine size={25}/>
                     </div>
                 </div>
-                {/* searchbar container */}
-                <div className='flex border px-4'>
-                    <input type='text' className='pr-8' placeholder='Search Crop, State...'/>
-                    <div className='pt-3'>
-                        <BiSearch size={25}/>
+                {/* searchbar container and analyze crop yield */}
+                <div className='flex justify-evenly space-x-20'>
+                    {/* searchbar container */}
+                    <div className='flex border rounded-md px-4'>
+                        <input type='text' className='pr-8' placeholder='Search Crop, State...'/>
+                        <div className='pt-3'>
+                            <BiSearch size={25}/>
+                        </div>                    
                     </div>
-                    
+                    {/* button container */}
+                    <Button openModal={setModal}/>
                 </div>
+                
             </div>
             {/* 10 search results */}
             <div className='flex border-b-2'>

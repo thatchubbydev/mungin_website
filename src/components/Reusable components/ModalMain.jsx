@@ -18,7 +18,7 @@ const ModalMain = ({closeModal}) => {
     <div className={ModalMain && `hidden`}>
         {/* To hide ModalMain card when displaying SubModal; 
             when ModalMain state is true, you'll set classname of card component to hidden */}
-        <div className='w-[500px] h-[500px] bg-white rounded-xl p-6'>
+        <div className='w-[500px] h-[600px] bg-white rounded-xl p-6'>
         {/* back to crop profile button */}
         <button onClick={()=> closeModal(false)}>
             {/* back button was implemented by setting closeModal prop to false
@@ -27,7 +27,7 @@ const ModalMain = ({closeModal}) => {
                     <div className='mr-1'>
                         <IoChevronBackSharp size={15}/> 
                     </div>
-                    <p className='text-[#5A5A5A] text-xs'>Back to crop profile</p>
+                    <p className='text-[#5A5A5A] text-xs'>Back to Database</p>
                 </div>
         </button>
          {/* form cotainer */}
@@ -41,6 +41,11 @@ const ModalMain = ({closeModal}) => {
             </div>
             {/* input button container */}
             <div className='space-y-6'>
+                {/* Crop Name container */}
+                <div>
+                    <p className='text-[#313131] text-sm'>Crop Name</p>
+                    <input className='border w-full text-[#5A5A5A] py-3 text-xs pl-4 rounded-md' placeholder='Maize' type='text'/>
+                </div>
                 {/* soil texture container */}
                 <div>
                     <p className='text-[#313131] text-sm'>Soil Texture</p>

@@ -5,7 +5,7 @@ const ModalSub = ({closeSubModal}) => {
   return (
     <div className='fixed bg-opacity-50 flex justify-center pb-32 h-full w-full'>
     {/* card container */}
-    <div className='w-[500px] h-[600px] mb-32 bg-white rounded-xl p-6'>
+    <div className='w-[500px] h-[450px] mb-32 bg-white rounded-xl p-6'>
 
         {/* back to crop profile button */}
         <button onClick={()=> closeSubModal(false)}>
@@ -16,7 +16,7 @@ const ModalSub = ({closeSubModal}) => {
                     <div className='mr-1'>
                         <IoChevronBackSharp size={15}/> 
                     </div>
-                    <p className='text-[#5A5A5A] text-xs'>Back to crop profile</p>
+                    <p className='text-[#5A5A5A] text-xs'>Back to Database</p>
                 </div>
         </button>
          {/* form cotainer */}
@@ -50,14 +50,15 @@ const ModalSub = ({closeSubModal}) => {
 
 
                 {/* Soil PH container*/}
-                <div className='space-y-2'>
+                {/* <div className='space-y-2'>
                     <p className='text-[#313131] text-sm'>Soil PH</p>
-                    {/* <input className='border w-full text-[#5A5A5A] py-3 text-xs pl-4 rounded-md' placeholder='3.4' type='text'/> */}
                     <div className='border w-full text-[#5A5A5A] py-3 text-xs pl-4 rounded-md'>
                         <p className='text-[#5A5A5A]'>3.4</p>
                     </div>
                     <p className='text-[#5A5A5A] text-xs'>Recommendation: (4.5) Your soil acidity is high, apply potash and reduce inorganic fertilizer.</p>
-                </div>
+                </div> */}
+                {/* <input className='border w-full text-[#5A5A5A] py-3 text-xs pl-4 rounded-md' placeholder='3.4' type='text'/> */}
+
 
                     
             </div>

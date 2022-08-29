@@ -17,16 +17,16 @@ import plant_o from '../../assets/vector/plant_o.png'
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/Reusable components/Navbar'
 import circle from '../../assets/tick-circle.png'
-import Button from '../../components/Reusable components/Button'
+import NewButton from '../../components/Reusable components/NewButton'
 import { useState } from 'react'
-import ModalMain from '../../components/Reusable components/ModalMain'
+import NewModalMain from '../../components/Reusable components/NewModalMain'
 
 const Cultivar = () => {
-    const [Modal, setModal] = useState(false)
+    // const [newModal, setnewModal] = useState(false)
   return (
      // parent container
      <div className='flex justify-between'>
-         {Modal && <ModalMain  closeModal={setModal}/>}
+         {/* {newModal && <NewModalMain/>} */}
      {/* left container */}
      <div className=' pt-6 w-1/4 shadow-3xl'>
          {/* image container */}
@@ -155,7 +155,7 @@ const Cultivar = () => {
             <div className='flex mx-10 justify-between border-b pb-8'>
                 <h2 className='text-4xl font-semibold'>Cultivar</h2>
                 {/* button container */}
-                <Button openModal = {setModal}/>
+                
 
             </div>
             {/* content */}

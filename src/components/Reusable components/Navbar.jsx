@@ -8,10 +8,10 @@ const Navbar = () => {
     
     <div className='mx-10 flex justify-between mb-10'>
     {/* back to home */}
-    <Link to={'/'}>
+    <Link to={'/database'}>
         <div className='flex'>
             <IoChevronBackSharp size={25}/>
-            <p className='text-[#5A5A5A] text-md'>Back to home</p>
+            <p className='text-[#5A5A5A] text-md'>Back</p>
         </div>
     </Link>
     

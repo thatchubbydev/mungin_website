@@ -149,9 +149,9 @@ const NutrientRequirements = () => {
             <div className='flex mx-10 justify-between border-b pb-8'>
                 <h2 className='text-4xl font-semibold'>Nutrient Requirements</h2>
                 {/* button container */}
-                <div className='bg-[#17233C] text-white py-3 px-4 rounded-md '>
+                {/* <div className='bg-[#17233C] text-white py-3 px-4 rounded-md '>
                     <p>Analyze Crop Yield</p>
-                </div>
+                </div> */}
 
             </div>
             {/* content */}
