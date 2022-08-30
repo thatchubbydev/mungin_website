@@ -1,10 +1,22 @@
 {
   "files": {
-    "main.css": "/mungin_website/static/css/main.6cc7112d.css",
-    "main.js": "/mungin_website/static/js/main.7a1cf448.js",
+    "main.css": "/mungin_website/static/css/main.ef353e94.css",
+    "main.js": "/mungin_website/static/js/main.003e8853.js",
     "static/media/cocoa.png": "/mungin_website/static/media/cocoa.72ced866def5c49ad093.png",
+    "static/media/maize_1.png": "/mungin_website/static/media/maize_1.3d4f39d52a3d736f6142.png",
     "static/media/mission-img.png": "/mungin_website/static/media/mission-img.68f8161ab6c64039275d.png",
+    "static/media/flint.png": "/mungin_website/static/media/flint.75be0c7a90e1211f8296.png",
+    "static/media/dent.png": "/mungin_website/static/media/dent.0df651d46f85e7dd6159.png",
+    "static/media/popcorn.png": "/mungin_website/static/media/popcorn.feccaaaf4ea5edfb3a20.png",
+    "static/media/rust.png": "/mungin_website/static/media/rust.2993ce6f19aa9b2e72cc.png",
     "static/media/Union.png": "/mungin_website/static/media/Union.f721ca8f7755492db556.png",
+    "static/media/map.png": "/mungin_website/static/media/map.70b92e98646a9405c4de.png",
+    "static/media/sweetcorn.png": "/mungin_website/static/media/sweetcorn.c23d05f1d4a8ef30fbe7.png",
+    "static/media/morphology_1.png": "/mungin_website/static/media/morphology_1.fc4ac226394997a42ae6.png",
+    "static/media/anatomy.png": "/mungin_website/static/media/anatomy.98f67a657b2a717a6bb3.png",
+    "static/media/blight.png": "/mungin_website/static/media/blight.1349fb9fe4caf6686069.png",
+    "static/media/mildew.png": "/mungin_website/static/media/mildew.304c5d940a10715629b7.png",
+    "static/media/flour.png": "/mungin_website/static/media/flour.9186795c905d43656d71.png",
     "static/media/working process.png": "/mungin_website/static/media/working process.6a4098e1e2ea03a5df8a.png",
     "static/media/carousel-image.png": "/mungin_website/static/media/carousel-image.351da546b73a57c8dc57.png",
     "static/media/google-s.png": "/mungin_website/static/media/google-s.9a818e616d0f17caffc4.png",
@@ -12,11 +24,11 @@
     "static/media/not_found.png": "/mungin_website/static/media/not_found.fab8ad695e2026cc86b8.png",
     "static/media/logo-white-bg.png": "/mungin_website/static/media/logo-white-bg.f9f9d51c340cbe1ab8fb.png",
     "index.html": "/mungin_website/index.html",
-    "main.6cc7112d.css.map": "/mungin_website/static/css/main.6cc7112d.css.map",
-    "main.7a1cf448.js.map": "/mungin_website/static/js/main.7a1cf448.js.map"
+    "main.ef353e94.css.map": "/mungin_website/static/css/main.ef353e94.css.map",
+    "main.003e8853.js.map": "/mungin_website/static/js/main.003e8853.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cc7112d.css",
-    "static/js/main.7a1cf448.js"
+    "static/css/main.ef353e94.css",
+    "static/js/main.003e8853.js"
   ]
 }
