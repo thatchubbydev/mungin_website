@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mungin_website/static/css/main.d5ba3e0d.css",
-    "main.js": "/mungin_website/static/js/main.24fca28d.js",
+    "main.js": "/mungin_website/static/js/main.12a32ad5.js",
     "static/media/cocoa.png": "/mungin_website/static/media/cocoa.72ced866def5c49ad093.png",
     "static/media/stem_borer.png": "/mungin_website/static/media/stem_borer.882171f4a6f481dd0ae1.png",
     "static/media/mission-img.png": "/mungin_website/static/media/mission-img.463563681cd3d678b5de.png",
@@ -34,10 +34,10 @@
     "static/media/logo-white-bg.png": "/mungin_website/static/media/logo-white-bg.f9f9d51c340cbe1ab8fb.png",
     "index.html": "/mungin_website/index.html",
     "main.d5ba3e0d.css.map": "/mungin_website/static/css/main.d5ba3e0d.css.map",
-    "main.24fca28d.js.map": "/mungin_website/static/js/main.24fca28d.js.map"
+    "main.12a32ad5.js.map": "/mungin_website/static/js/main.12a32ad5.js.map"
   },
   "entrypoints": [
     "static/css/main.d5ba3e0d.css",
-    "static/js/main.24fca28d.js"
+    "static/js/main.12a32ad5.js"
   ]
 }
