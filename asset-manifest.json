@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/mungin_website/static/css/main.ef353e94.css",
-    "main.js": "/mungin_website/static/js/main.043ecb3e.js",
+    "main.css": "/mungin_website/static/css/main.d5ba3e0d.css",
+    "main.js": "/mungin_website/static/js/main.24fca28d.js",
     "static/media/cocoa.png": "/mungin_website/static/media/cocoa.72ced866def5c49ad093.png",
+    "static/media/stem_borer.png": "/mungin_website/static/media/stem_borer.882171f4a6f481dd0ae1.png",
+    "static/media/mission-img.png": "/mungin_website/static/media/mission-img.463563681cd3d678b5de.png",
     "static/media/maize_1.png": "/mungin_website/static/media/maize_1.3d4f39d52a3d736f6142.png",
-    "static/media/mission-img.png": "/mungin_website/static/media/mission-img.68f8161ab6c64039275d.png",
     "static/media/flint.png": "/mungin_website/static/media/flint.75be0c7a90e1211f8296.png",
+    "static/media/pink_borer.png": "/mungin_website/static/media/pink_borer.9a41302e73283c3e79eb.png",
     "static/media/dent.png": "/mungin_website/static/media/dent.0df651d46f85e7dd6159.png",
     "static/media/popcorn.png": "/mungin_website/static/media/popcorn.feccaaaf4ea5edfb3a20.png",
+    "static/media/stalk_rot.png": "/mungin_website/static/media/stalk_rot.94f85cccabfcfdfb69ea.png",
     "static/media/rust.png": "/mungin_website/static/media/rust.2993ce6f19aa9b2e72cc.png",
     "static/media/Union.png": "/mungin_website/static/media/Union.f721ca8f7755492db556.png",
     "static/media/map.png": "/mungin_website/static/media/map.70b92e98646a9405c4de.png",
@@ -15,20 +18,26 @@
     "static/media/morphology_1.png": "/mungin_website/static/media/morphology_1.fc4ac226394997a42ae6.png",
     "static/media/anatomy.png": "/mungin_website/static/media/anatomy.98f67a657b2a717a6bb3.png",
     "static/media/blight.png": "/mungin_website/static/media/blight.1349fb9fe4caf6686069.png",
+    "static/media/army_worm.png": "/mungin_website/static/media/army_worm.345f7c9b868bd18c25f3.png",
+    "static/media/blight_disease.png": "/mungin_website/static/media/blight_disease.54e6f752231d47b05fd6.png",
     "static/media/mildew.png": "/mungin_website/static/media/mildew.304c5d940a10715629b7.png",
     "static/media/flour.png": "/mungin_website/static/media/flour.9186795c905d43656d71.png",
+    "static/media/termites.png": "/mungin_website/static/media/termites.3fa8307380de225a07a4.png",
     "static/media/working process.png": "/mungin_website/static/media/working process.6a4098e1e2ea03a5df8a.png",
     "static/media/carousel-image.png": "/mungin_website/static/media/carousel-image.351da546b73a57c8dc57.png",
+    "static/media/accelerate_value.png": "/mungin_website/static/media/accelerate_value.dd3036b119977ce297b1.png",
     "static/media/google-s.png": "/mungin_website/static/media/google-s.9a818e616d0f17caffc4.png",
     "static/media/sponsors.png": "/mungin_website/static/media/sponsors.cb1de52b4e790f34fb03.png",
+    "static/media/activate_analysis.png": "/mungin_website/static/media/activate_analysis.936c5cae50a39e2e218b.png",
+    "static/media/unlock_data.png": "/mungin_website/static/media/unlock_data.a308bd96eec1e87471e2.png",
     "static/media/not_found.png": "/mungin_website/static/media/not_found.fab8ad695e2026cc86b8.png",
     "static/media/logo-white-bg.png": "/mungin_website/static/media/logo-white-bg.f9f9d51c340cbe1ab8fb.png",
     "index.html": "/mungin_website/index.html",
-    "main.ef353e94.css.map": "/mungin_website/static/css/main.ef353e94.css.map",
-    "main.043ecb3e.js.map": "/mungin_website/static/js/main.043ecb3e.js.map"
+    "main.d5ba3e0d.css.map": "/mungin_website/static/css/main.d5ba3e0d.css.map",
+    "main.24fca28d.js.map": "/mungin_website/static/js/main.24fca28d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef353e94.css",
-    "static/js/main.043ecb3e.js"
+    "static/css/main.d5ba3e0d.css",
+    "static/js/main.24fca28d.js"
   ]
 }
