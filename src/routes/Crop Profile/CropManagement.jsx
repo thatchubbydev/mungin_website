@@ -20,6 +20,13 @@ import circle from '../../assets/tick-circle.png'
 import mildew from '../../assets/crop_mgt/mildew.png'
 import blight from '../../assets/crop_mgt/blight.png'
 import rust from '../../assets/crop_mgt/rust.png'
+import stalk_rot from '../../assets/crop_mgt/stalk_rot.png'
+import blight_disease from '../../assets/crop_mgt/blight_disease.png'
+import army_worm from '../../assets/crop_mgt/army_worm.png'
+import stem_borer from '../../assets/crop_mgt/stem_borer.png'
+import pink_borer from '../../assets/crop_mgt/pink_borer.png'
+import termites from '../../assets/crop_mgt/termites.png'
+
 
 const CropManagement = () => {
   return (
@@ -207,6 +214,90 @@ const CropManagement = () => {
                     <div>
                         <p className='text-[#565656] pt-6'>Rust is also a fungal disease that can affect maize crop in Nigeria. The foliar application of Diathane or any good fungicides can prevent or cure this disease.
                         </p>
+                    </div>
+
+                </div>
+
+                {/* image 4 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Stalk Rot</p>
+                    </div>
+                    <img src={stalk_rot} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>Stalk rot is a fungal disease that causes the rottening of the stalk of maize plants. Trichoderma biofungicides or chemical fungicides can be used to control this disease. An increase in potassium fertilizer can also reduce the incidences of this disease.</p>
+                    </div>
+
+                </div>
+
+                {/* image 5 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Blight Disease</p>
+                    </div>
+                    <img src={blight_disease} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>Blight is caused by Rhizoctonia sp. Pseudomonas fluorescens culture or the application of inorganic fungicides can control this disease.</p>
+                    </div>
+
+                </div>
+
+                {/* image 6 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Army Worm</p>
+                    </div>
+                    <img src={army_worm} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>Arguably, the most dangerous insect that can destroy a maize farm within a twinkle of an eye, army worm can be controlled by using Tihan, Thunder, Ampligo and other selected insecticides in Nigeria. It is better to prevent army worm than trying to eradicate them after infestation.</p>
+                    </div>
+
+                </div>
+
+                {/* image 7 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Stem Borer</p>
+                    </div>
+                    <img src={stem_borer} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>This insect is common in maize fields in Nigeria. It can be controlled with the spraying of Cholopyriphos and the use of Carbofuran (wormforce).</p>
+                    </div>
+
+                </div>
+
+                {/* image 8 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Pink Borer</p>
+                    </div>
+                    <img src={pink_borer} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>Just like stem borer, It can be controlled with the spraying of Cholopyriphos and the use of Carbofuran (wormforce).</p>
+                    </div>
+
+                </div>
+
+                {/* image 9 container */}
+                <div className='my-10 mx-2'>    
+                    {/* tick container */}
+                    <div className='space-x-6 flex pb-4'>
+                        <img src={circle} alt='circle' width={30}/>
+                        <p className='text-[#313131] font-bold text-2xl'>Termites</p>
+                    </div>
+                    <img src={termites} alt='flint'/>
+                    <div>
+                        <p className='text-[#565656] pt-6'>Termites can destroy a maize farm if they are not quickly controlled. The application of Fepronil granules can be used to control termites.</p>
                     </div>
 
                 </div>

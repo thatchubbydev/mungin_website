@@ -171,7 +171,7 @@ const Cultivar = () => {
                 <div className='m-4 flex'>
                     {/* green tick */}
                     <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
-                    <p className='text-[#565656] font-semibold'>3DT Com</p>
+                    <p className='text-[#565656] font-semibold'>EVDT 99</p>
                 </div>
                 {/* cultivar container 1 */}
                 <div className='m-4 flex'>
@@ -183,13 +183,43 @@ const Cultivar = () => {
                 <div className='m-4 flex'>
                     {/* green tick */}
                     <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
+                    <p className='text-[#565656] font-semibold'>3DT Com</p>
+                </div>
+                {/* cultivar container 1 */}
+                <div className='m-4 flex'>
+                    {/* green tick */}
+                    <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
                     <p className='text-[#565656] font-semibold'>Yar Masara</p>
                 </div>
                 {/* cultivar container 1 */}
                 <div className='m-4 flex'>
                     {/* green tick */}
                     <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
+                    <p className='text-[#565656] font-semibold'>Sammaz37</p>
+                </div>
+                {/* cultivar container 1 */}
+                <div className='m-4 flex'>
+                    {/* green tick */}
+                    <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
+                    <p className='text-[#565656] font-semibold'>TZE Comp3</p>
+                </div>
+                {/* cultivar container 1 */}
+                <div className='m-4 flex'>
+                    {/* green tick */}
+                    <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
                     <p className='text-[#565656] font-semibold'>Notore</p>
+                </div>
+                {/* cultivar container 1 */}
+                <div className='m-4 flex'>
+                    {/* green tick */}
+                    <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
+                    <p className='text-[#565656] font-semibold'>Samaru</p>
+                </div>
+                {/* cultivar container 1 */}
+                <div className='m-4 flex'>
+                    {/* green tick */}
+                    <div className='px-2'><img src={circle} alt='circle' width={25}/></div>
+                    <p className='text-[#565656] font-semibold'>2009 EVDT</p>
                 </div>
             </div>
         </div>

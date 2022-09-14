@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import Register from "./routes/Auth/Register";
 import Login from "./routes/Auth/Login";
-import NotFound from "./routes/NotFound";
+// import NotFound from "./routes/NotFound";
 import Database from "./routes/Database/Database.jsx";
 import CropProfile from "./routes/Crop Profile/CropProfile";
 import Variety from "./routes/Crop Profile/Variety";
@@ -26,10 +26,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route exact path="/" element={<App />} />
       <Route path="register" element={<Register />} />
       <Route path="login" element={<Login />} />
-      <Route path="*" element={<NotFound />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
       <Route path="database" element={<Database />} />
       <Route path="crop_p" element={<CropProfile />} />
       <Route path="cultivar" element={<Cultivar />} />

@@ -5,23 +5,24 @@ import google from '../../assets/google-s.png'
 import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import AuthService from '../../services/auth.service'
 
 
 const Register = () => {
   const initialValues = {
    name:'',
-   email:'', 
    password:'', 
-   farmno:'', 
-   farmnames:'', 
-   locations:'', 
-   animalfarm:'', 
-   animalsize:'', 
-   cropfarm:'', 
-   cropsize:'', 
-   otherfarm:'', 
-   othersize:'', 
-   boolean:''
+   email:'',
+  //  boolean:'',
+  //  farmno:'', 
+  //  farmnames:'', 
+  //  locations:'', 
+  //  animalfarm:'', 
+  //  animalsize:'', 
+  //  cropfarm:'', 
+  //  cropsize:'', 
+  //  otherfarm:'', 
+  //  othersize:'', 
   }
   const [formValues, setformValues] = useState(initialValues)
   const handleChange = (event) => {
@@ -31,20 +32,59 @@ const Register = () => {
   const [farmType, setfarmType] = useState('')
   const [formErrors, setformErrors] = useState({})
   const [isSubmit, setisSubmit] = useState(false)
+  const [Message, setMessage] = useState('')
+  const [Successful, setSuccessful] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setformErrors(validate(formValues))
     setisSubmit(true)
+    setMessage('')
+    setSuccessful(false)
+    console.log(formValues,'register')
+    if(Object.keys(formErrors).length === 0 && isSubmit){
+      AuthService.register(
+        formValues.email,
+        formValues.password,
+        formValues.name,
+        // formValues.farmno,
+        // formValues.farmnames,
+        // formValues.locations,
+        // formValues.animalfarm,
+        // formValues.animalsize,
+        // formValues.cropfarm,
+        // formValues.cropsize,
+        // formValues.otherfarm,
+        // formValues.othersize
+      ).then(
+        response => {
+          setMessage(response.data.message)
+          setSuccessful(true)
+          console.log(response,'response')
+        },
+        error => {
+          const resMessage = 
+          (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+            error.message ||
+            error.toString();
+          setSuccessful(false)
+          setMessage(resMessage)
+          console.log(error.response.data)
+        }
+      )
+    }
+     
   }
 
   useEffect(()=> {
     console.log(formErrors)
     if(Object.keys(formErrors).length === 0 && isSubmit){
-    console.log(formValues)
+      console.log(formValues)
   }},[formErrors])
   
-
+// form validation
   const validate = (values) => {
     const errors = {}
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -73,32 +113,28 @@ const Register = () => {
 
   
   return (
-    // paret container
+    // parent container
     <div className='flex '>
       
       {/* left container */}
       <div className='sm:hidden md:block'><img src={cocoa}  className='h-max bg-contain' alt='cocoa'/></div>
       {/* right container */}
-      <div className='md:w-1/2 sm:w-full container mx-auto mt-10 ml-20'>
+      <div className='md:w-1/2 sm:w-full container mx-auto mt-10 ml-20 pb-6'>
         {/* error message */}
-      {Object.keys(formErrors).length === 0 && isSubmit ? (<div className='flex w-4/5 justify-center'>
-        <p className='p-2 bg-[#83BF4F] rounded-lg text-white animate-pulse font-semibold px-4'>Registered successfully ✅ </p>
-        </div>):null
-        // ()
-      }
+      
       {/* {formErrors.length === 0 ? <div className='flex w-4/5 justify-center '><p className='p-2 px-4 bg-red-500 rounded-lg text-white font-semibold animate-pulse'>Failed 😔 </p></div> :null} */}
 
         <Link to={'/'}>
           <img className='mt-6' src={logo} width={150} alt='Mungin'/>
         </Link>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className=''>
           <h2 className='text-3xl font-semibold text-[#313131] mt-20 mb-6'>Register with us</h2>
           {/* google button */}
-          <div className='flex justify-center font-semibold w-4/5 border p-4 py-5 '>
+          {/* <div className='flex justify-center font-semibold w-4/5 border p-4 py-5 '>
             <img src={google} width={20} className='mr-2' alt='google'/>
             <button className='text-sm text-[#313131]'>Continue with Google</button>
-          </div>
-          <p className='text-[#888888] text-center w-4/5 py-4'>OR</p>
+          </div> */}
+          {/* <p className='text-[#888888] text-center w-4/5 py-4'>OR</p> */}
           {/* form container */}
           <div className='text-[#313131] space-y-6'>
               {/* name container */}
@@ -214,6 +250,16 @@ const Register = () => {
               <p className='text-[#888888] pb-12'>Already have an account? <Link to={'/login'}><span className='text-[#333333]'>Login</span></Link></p>
            </div>
           </form>
+          {Successful? (<div className='flex w-4/5 justify-center'>
+            <p className='p-2 bg-[#83BF4F] rounded-lg text-white animate-pulse font-semibold px-4'>Registered successfully ✅ </p>
+            </div>):
+            <div className='flex w-4/5 justify-center'>
+            <p className='p-2 bg-[#f71919] rounded-lg text-white animate-pulse font-semibold px-4'>{Message} </p>
+            </div>}
+          {/* {Object.keys(formErrors).length === 0 && isSubmit ? (<div className='flex w-4/5 justify-center'>
+            <p className='p-2 bg-[#83BF4F] rounded-lg text-white animate-pulse font-semibold px-4'>Registered successfully ✅ </p>
+            </div>):null
+          } */}
         
       </div>
     </div>

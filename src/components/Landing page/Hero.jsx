@@ -1,5 +1,7 @@
 import React from 'react'
 import green from '../../assets/Union.png'
+import {Link} from 'react-router-dom'
+
 
 const Hero = () => {
   return (
@@ -12,8 +14,12 @@ const Hero = () => {
           Agtech Solutions to improve agricultural productivity in Nigeria is our ethos. </p>
       {/* button and link */}
       <div className='space-x-6 mt-10'>
-        <button className=' bg-[#17233C] p-3 mb-3 text-white px-4 rounded-md'>Search Our Database</button>
-        <button className='text-[#375A1A]'>Join Waiting List</button>
+        <Link to={'/database'}>
+          <button className=' bg-[#17233C] p-3 mb-3 text-white px-4 rounded-md'>Search Our Database</button>
+        </Link>
+        <Link to={'/register'}>
+          <button className='text-[#375A1A]'>Join Waiting List</button>
+        </Link>
       </div>
       </div>
       

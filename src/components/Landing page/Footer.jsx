@@ -1,6 +1,7 @@
 import React from 'react'
 import {BsArrowRightShort} from 'react-icons/bs'
 import logo from '../../assets/logo-footer.png'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
       <div className='w-1/3 flex sm:justify-start flex-col '>
         <p className='text-left md:text-center font-light text-2xl'>About us</p>
         <button className='sm:text-left pt:6 md:text-center my-2 font-light'>Our Mission</button>
-        <button className='sm:text-left md:text-center my-2 font-light'>News & Articles</button>
+        <button className='sm:text-left md:text-center my-2 font-light'><a href='https://www.newsnow.com/ng/Economy/Agriculture' target="_blank">News & Articles</a></button>
         <button className='sm:text-left md:text-center my-2 font-light'>Working process</button>
       </div>
       {/* input form */}
